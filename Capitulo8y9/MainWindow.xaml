@@ -1,0 +1,24 @@
+﻿<Window x:Class="Capitulo8y9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Capitulo8y9"
+        mc:Ignorable="d"
+       Title="MainWindow" Height="400" Width="500">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <Menu Height="18">
+                <MenuItem Header="Capitulo 8">
+                    <MenuItem Header="Ejercicio 3" x:Name="ejercicio3" Click="ejercicio3_Click"></MenuItem>
+                    <MenuItem Header="Ejercicio 5" x:Name="ejercicio5" Click="ejercicio5_Click"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Capitulo 9">
+                    <MenuItem Header="Ejercicio 1" x:Name="ejercicio1" Click="ejercicio1_Click"></MenuItem>
+                     <MenuItem Header="Ejercicio 3" x:Name="ejercicio31" Click="ejercicio31_Click"></MenuItem>
+                       <MenuItem Header="Ejercicio 4" x:Name="ejercicio4" Click="ejercicio4_Click"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
+    </Grid>
+</Window>

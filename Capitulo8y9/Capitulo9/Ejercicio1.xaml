@@ -1,0 +1,83 @@
+<Window x:Class="Capitulo8y9.Capitulo9.Ejercicio1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Capitulo8y9.Capitulo9"
+        mc:Ignorable="d"
+        Title="Registro " Height="490" Width="390">
+    <Grid>
+
+        <StackPanel Orientation="Vertical" Margin="10"> 
+           
+           <!-- LibroId -->
+            <StackPanel Orientation="Vertical">
+                <Label Content="Productoid:"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="Productoidtxt"  Width="100" />
+                    
+                </StackPanel>
+            </StackPanel>
+
+             <StackPanel Orientation="Vertical">
+                <Label Content="Descricion:"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="descriciontxt"  Width="100" />
+                    
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical">
+                <Label Content="Costo:"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="costotxt"  Width="100" />
+                    
+                </StackPanel>
+            </StackPanel>
+           
+           <StackPanel Orientation="Vertical">
+                <Label Content="Existencia"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="existenciatxt"  Width="100" />
+                   
+                    
+                </StackPanel>
+            </StackPanel>
+
+
+                <!-- BARRA DE BOTONES -->
+            <StackPanel 
+                        Margin="0,16,0,0"                      
+                        Orientation="Horizontal" 
+                        HorizontalAlignment="Center" >
+                        
+                 <Button Content="✔ Guardar" Click="GuardarButton_Click" />
+                 <Button Content="✔ imprimir" Click="imprimir_Click" />
+               
+                
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                  
+                    <ListBox  x:Name="pantalla" Height="190" Width="200"   VerticalAlignment="Top" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+                    
+                </StackPanel>
+
+        </StackPanel>
+
+                
+         
+             
+
+
+
+        
+
+          
+
+    </Grid>
+</Window>
